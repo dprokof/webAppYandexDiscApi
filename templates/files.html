@@ -7,6 +7,16 @@
 </head>
 <body>
     <h1>Список файлов</h1>
+
+    <form action="" method="GET">
+        <label for="filetype">Выберите тип файлов:</label>
+        <select name="filetype" id="filetype">
+            <option value="all">Все файлы</option>
+            <option value="documents>">Только документы</option>
+            <option value="images">Только изображения</option>
+        </select>
+        <input type="submit" value="Применить фильтр">
+    </form>
     <ul>
         {% for file in files %}
             <li>
